@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>phpSubmitForm</title>
+    <link rel="stylesheet" href="bootstrap.css"/>
+    <link rel="stylesheet" href="bootstrap-theme.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 center">
+            <form>
+                <input class="form-control" type="hidden" name="project_name" value="Site Name">
+                <input class="form-control" type="hidden" name="admin_email" value="YOUR EMAil">
+                <input class="form-control" type="hidden" name="form_subject" value="Form Subject">
+                <div class="row">
+                    <div class="col-md-12">
+                        <input class="dataUserName form-control" type="text" name="Name" placeholder="NAME" required><br>
+                        <input class="dataUserEmail form-control" type="email" name="E-mail" placeholder="E-MAIL" required><br>
+                    </div>
+                    <div class="col-md-12">
+                        <textarea class="dataUserText form-control" name="Text" placeholder="NACHRICHT" required></textarea><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1">
+                        <button type="submit" class="btn btn-default btnSubmit btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="jquery-2.2.1.min.js"></script>
+<script src="mail.js"></script>
+</body>
+</html>
